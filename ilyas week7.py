@@ -26,3 +26,24 @@ file=open(dosya,"w")
 file.write(metin)   #az önce for döngüsü ile oluşturduğumuz metin dosyasını diğer dosyanın üzerine yazıyoruz
 print('Dosya Güncellendi')   #işlem sonucunu ekrana yazdırıp dosyayı kapatıyoruz.
 file.close()
+
+#3.sorunun Cevabı
+#---------------------------
+import json
+        
+giris=input('Öğrenci Listesi İçin-----1\nYeni ÖğrenciEklemek İçin--2\n')
+if giris =="1":
+    with open("students.json") as file:
+        veriler=json.load(file)
+        print(veriler)
+
+elif giris=="2":
+    
+    ad=input("İsim Giriniz:  ")
+    soyad=input("Soyisim Giriniz:  ")
+    yas=input("Yaş Giriniz:   ")
+    yeni_ogrenci={'ad':ad,'soyad':soyad,'yas':yas}
+    
+    with open("students.json", "a",encoding="utf8") as file:
+        json.dump(yeni_ogrenci,file)
+        
