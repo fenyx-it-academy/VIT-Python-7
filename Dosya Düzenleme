@@ -17,6 +17,7 @@ def satir_num_ekle(dosya_adi):
 
 
 # dosya_adi = "deneme2.txt"
+#Deneme2.txt dosyasi kontrol icin kullanilabilir.
 dosya_adi = input(
     "Bu program, metin dosyasi icindeki her satira numara ekler.\nLutfen dosya adini giriniz:\n")
 satir_num_ekle(dosya_adi)
