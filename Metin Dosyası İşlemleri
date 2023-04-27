@@ -18,6 +18,6 @@ def sayilar_toplami(dosya_adi):
     finally:
         file.close()
 
-
+#Deneme.txt dosyasi kontrol icin kullanilabilir.
 dosya_adi = input("Bir metin dosyasi icindeki satirlarda bulunan sayilarin toplamini\n ve buna gore dosyada bulunan satirlarin ortalamasini hesaplayan programa hosgeldiniz.\nLutfen dosya adini giriniz:\n")
 sayilar_toplami(dosya_adi)
