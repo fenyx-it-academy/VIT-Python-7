@@ -1,0 +1,22 @@
+def satir_num_ekle(dosya_adi):
+    try:
+        with open(dosya_adi, "r+") as file:
+            lines = file.readlines()
+            new_lines = []
+            number = 0
+            for i in lines:
+                number += 1
+                new_lines.append(f"{number}. {i}")
+            file.seek(0)  # Dosyanın başına git.
+            file.writelines(new_lines)  # Yeni satırları dosyaya yaz.
+            file.truncate()  # Gereksiz karakterleri kes.
+    except:
+        print("Bir hata var, dosya bulunamadi")
+    finally:
+        file.close()
+
+
+# dosya_adi = "deneme2.txt"
+dosya_adi = input(
+    "Bu program, metin dosyasi icindeki her satira numara ekler.\nLutfen dosya adini giriniz:\n")
+satir_num_ekle(dosya_adi)
