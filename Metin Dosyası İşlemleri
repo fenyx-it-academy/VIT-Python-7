@@ -1,0 +1,23 @@
+def sayilar_toplami(dosya_adi):
+    try:
+        file = open(dosya_adi, "r")
+        satir_sayisi = 0
+        Toplam = 0
+        for line in file.readlines():
+            new_list = line.split()
+            # new_list = [int(x) for x in new_list]
+            new_list = list(map(int, new_list)) #Iki yontem de kullanilabilir. Biri list comprehensions digeri map fonksiyonu.
+            satirdaki_toplam = sum(new_list)
+            satir_sayisi += 1
+            print(f"{satir_sayisi}. satirdaki sayilarin toplami {satirdaki_toplam}")
+            Toplam += satirdaki_toplam
+        print("{} adli dosyadaki satirlarin ortalamasi {:.2f}" .format(
+            dosya_adi, Toplam/satir_sayisi))
+    except:
+        print("Bir hata var. Aradiginiz dosya bulunamadi.")
+    finally:
+        file.close()
+
+#Deneme.txt dosyasi kontrol icin kullanilabilir.
+dosya_adi = input("Bir metin dosyasi icindeki satirlarda bulunan sayilarin toplamini\n ve buna gore dosyada bulunan satirlarin ortalamasini hesaplayan programa hosgeldiniz.\nLutfen dosya adini giriniz:\n")
+sayilar_toplami(dosya_adi)
