@@ -1,0 +1,79 @@
+{
+    "student_details": [
+        {
+            "name": "Ali",
+            "last_name": "Birinci",
+            "age": 25
+        },
+        {
+            "name": "Veli",
+            "last_name": "\u0130ki",
+            "age": 22
+        },
+        {
+            "name": "Ayyyy",
+            "last_name": "uc",
+            "age": 21
+        },
+        {
+            "name": "Hilal",
+            "lastname": "Dort",
+            "age": 28
+        },
+        {
+            "name": "Leyla",
+            "lastname": "Bes",
+            "age": 20
+        },
+        {
+            "name": "qqq",
+            "last_name": "www",
+            "age": "11"
+        },
+        {
+            "name": "aaa",
+            "last_name": "sss",
+            "age": "33"
+        },
+        {
+            "name": "qqq",
+            "last_name": "ddd",
+            "age": "23"
+        },
+        {
+            "name": "fff",
+            "last_name": "ggg",
+            "age": "12"
+        },
+        {
+            "name": "qwert",
+            "last_name": "qqqq",
+            "age": "33"
+        },
+        {
+            "name": "rrrt",
+            "last_name": "fffff",
+            "age": "44"
+        },
+        {
+            "name": "ert",
+            "last_name": "yyyy",
+            "age": "12"
+        },
+        {
+            "name": "hhhhh",
+            "last_name": "aaaaa",
+            "age": "24"
+        },
+        {
+            "name": "Ali",
+            "last_name": "wwwwwwwww",
+            "age": "22"
+        },
+        {
+            "name": "guuuuuu",
+            "last_name": "gggggg",
+            "age": "44"
+        }
+    ]
+}
