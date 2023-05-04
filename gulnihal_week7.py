@@ -17,6 +17,17 @@ print("Toplam:", toplam)
 print("Ortalama:", ortalama)
 
 #soru2
+dosya_adi = input("Dosya adını girin: ")
+
+with open(dosya_adi, "r") as dosya:
+    satirlar = dosya.readlines()
+
+with open(dosya_adi, "w") as dosya:
+    for i, satir in enumerate(satirlar):
+        dosya.write(str(i+1) + " " + satir)
+ 
+
+print("Dosya güncellendi.") 
 
 
 #soru3
