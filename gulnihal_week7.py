@@ -1,3 +1,23 @@
+#soru1
+
+dosya_adi = input("Dosya adini girin: ")
+
+with open(dosya_adi, "r") as dosya:
+    toplam = 0
+    satir_sayisi = 0
+    for satir in dosya:
+        sayilar = satir.split()
+        for sayi in sayilar:
+            toplam += float(sayi)
+        satir_sayisi += 1
+
+ortalama = toplam / satir_sayisi
+
+print("Toplam:", toplam)
+print("Ortalama:", ortalama)
+
+#soru2
+
 
 #soru3
 #ilk olarak bir json dosyasi olusturuyoruz.
