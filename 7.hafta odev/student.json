@@ -1,0 +1,12 @@
+{
+    "student1": {
+        "ad": "halil",
+        "soyad": "yildiz",
+        "yas": "23"
+    },
+    "student2": {
+        "ad": "cafer",
+        "soyad": "yilmaz",
+        "yas": "33"
+    }
+}
